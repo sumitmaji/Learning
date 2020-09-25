@@ -1,0 +1,21 @@
+Users: Subscribed coures
+https://"+SystemPropertyUtil.getUrl()+"/api-2.0/users/me/subscribed-courses
+
+Get details of lectures of a subscribed course:
+https://"+SystemPropertyUtil.getUrl()+"/api-2.0/courses/2043700/subscriber-curriculum-items/?page_size=1400&fields[lecture]=title,object_index,is_published,sort_order,created,asset,supplementary_assets,is_free&fields[quiz]=title,object_index,is_published,sort_order,type&fields[practice]=title,object_index,is_published,sort_order&fields[chapter]=title,object_index,is_published,sort_order&fields[asset]=title,filename,asset_type,status,time_estimation,is_external&caching_intent=True
+
+Streamed url
+https://"+SystemPropertyUtil.getUrl()+"/api-2.0/users/me/subscribed-courses/2043700/lectures/12872856/?fields[asset]=stream_urls
+
+Documnets:
+https://"+SystemPropertyUtil.getUrl()+"/api-2.0/users/me/subscribed-courses/2043700/lectures/12749775/supplementary-assets/15501723/?fields[asset]=download_urls
+
+External links:
+https://"+SystemPropertyUtil.getUrl()+"/api-2.0/users/me/subscribed-courses/2043700/lectures/15515450/supplementary-assets/19219304/?fields[asset]=external_url
+
+Html:
+https://"+SystemPropertyUtil.getUrl()+"/api-2.0/assets/18810460/?fields[asset]=body
+
+
+Asset type: Video, Article
+Supplementry Asset type: File, ExternaLink
